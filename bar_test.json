@@ -1,0 +1,127 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+    "width": 500,
+    "height": 500,
+    "padding": 5,
+  
+    "data": [
+      {
+        "name": "table",
+        "values": [
+          {"category": "Accesories", "sales": 163073},
+          {"category": "Appliances", "sales": 275439},
+          {"category": "Art", "sales": 160088},
+          {"category": "Binders", "sales": 99763},
+          {"category": "Bookcases", "sales": 363526},
+          {"category": "Chairs", "sales": 228981},
+          {"category": "Copiers", "sales": 365129},
+          {"category": "Envelopes", "sales": 40124},
+          {"category": "Fasteners", "sales": 20330},
+          {"category": "Furnishing", "sales": 81215},
+          {"category": "Labels", "sales": 15645},
+          {"category": "Machines", "sales": 223165},
+          {"category": "Paper", "sales": 42451},
+          {"category": "Phones", "sales": 361312},
+          {"category": "Storage", "sales": 339684},
+          {"category": "Supplies", "sales": 52783},
+          {"category": "Tables", "sales": 105381}
+        ]
+      }
+    ],
+  
+     "title": {
+       "text": "Ventas totales por categoría de producto",
+       "fontSize": 18,
+       "subtitle": "Las ventas representan el importe total pagado por el cliente, incluídos todos los descuentos.",
+       "subtitleFontSize": 12,
+        "anchor":"start",
+        "dx": 5,
+        "dy": -15
+      },
+  
+   "signals": [
+      {
+        "name": "tooltip",
+        "value": {},
+        "on": [
+          {"events": "rect:mouseover", "update": "datum"},
+          {"events": "rect:mouseout",  "update": "{}"}
+        ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "xscale",
+        "type": "linear",
+        "domain": {"data": "table", "field": "sales"},
+        "range": "width",
+        "nice":true
+      },
+      {
+        "name": "yscale",
+        "type": "band",
+        "domain": {
+          "data": "table", 
+          "field": "category",
+          "sort": {"field": "sales", "op": "sum", "order": "descending"}
+          },
+        "padding": 0.2,
+        "range": "height",
+        "round": true
+      }
+    ],
+  
+    "axes": [
+      {
+        "scale": "xscale",
+        "orient": "bottom"
+      },
+      {
+        "scale": "yscale",
+        "orient": "left",
+        "ticks": false,
+        "labelPadding": 10
+      }
+    ],
+  
+    "marks":[
+      {
+        "type": "rect",
+        "from": {"data": "table"},
+        "encode": {
+          "enter": {
+            "x": {"scale": "xscale", "value": 0},
+            "x2": {"scale": "xscale", "field": "sales"},
+            "y": {"scale": "yscale", "field": "category"},
+            "height": {"scale": "yscale", "band": 1}
+          },
+          "update": {
+            "fill": {"value": "black"},
+            "cornerRadiusBottomRight": {"value": 3},
+            "cornerRadiusTopRight": {"value": 3},
+            "fillOpacity": {"value": 0.8}
+          },
+          "hover": {
+            "fill": {"value": "red"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "from": {"data": "table"},
+        "encode": {
+          "enter": {
+            "x": {"scale": "xscale", "field": "sales", "offset": 5},
+            "y": {"scale": "yscale", "field": "category"},
+            "align": {"value": "left"},
+            "dy": {"value": 17},
+            "text": {"field": "sales"}
+          }
+        }
+  
+      }
+    ]
+  }
+  
