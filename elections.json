@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A basic pie chart example.",
+  "width": 600,
+  "height": 400,
+  "autosize": "none",
+
+"title": {
+  "text": "Title Text"
+  },
+
+  "signals": [
+    {
+      "name": "innerRadius", "value": 100
+    }
+  ],
+
+  "data": [
+    {
+      "name": "table",
+      "values": [
+        {"id": "PP", "field": 29},
+        {"id": "MM", "field": 12},
+        {"id": "PSOE", "field": 11},
+        {"id": "VOX", "field": 5}
+      ],
+      "transform": [
+        {
+          "type": "pie",
+          "field": "field",
+          "startAngle": 1.5708,
+          "endAngle": -1.5708,
+          "sort": true
+        }
+      ]
+    }
+  ],
+
+
+
+
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "id"},
+      "range": {"scheme": "category20"}
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "arc",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "fill": {"scale": "color", "field": "id"},
+          "x": {"value": 300},
+          "y": {"value": 400}
+        },
+        "update": {
+          "startAngle": {"field": "startAngle"},
+          "endAngle": {"field": "endAngle"},
+          "innerRadius": {"signal": "innerRadius"},
+          "outerRadius": {"value": 50}
+        }
+      }
+    }
+  ]
+}
