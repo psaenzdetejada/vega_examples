@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "A basic pie chart example.",
-  "width": 400,
-  "height": 400,
+  "width": 300,
+  "height": 200,
   "autosize": "none",
 
 "title": {
@@ -55,8 +55,8 @@
       "encode": {
         "enter": {
           "fill": {"scale": "color", "field": "id"},
-          "x": {"value": 300},
-          "y": {"value": 400}
+          "x": {"value": 150},
+          "y": {"value": 200}
         },
         "update": {
           "startAngle": {"field": "startAngle"},
