@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+      var spec = "https://github.com/psaenzdetejada/vega_examples/blob/main/bar_example.json";
+      var opt = {
+        mode: "vega",
+        defaultStyle: true,
+        downloadFileName: "VegaViz", //specifies the name if download as image is enable
+        actions: true, //to show or not the actions to download as PNG, etc.
+        i18n: { //allows to define the text of the actions if those are enabled.
+            COMPILED_ACTION: "",
+            EDITOR_ACTION: "Abrir en Vega Editor",
+            PNG_ACTION: "Guardar como PNG",
+            SOURCE_ACTION: "Ver código fuente",
+            SVG_ACTION: "Guardar como SVG"
+        }
+      }
+      vegaEmbed('#vis', spec,opt).then(function(result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+    </script>
+</body>
+</html>
