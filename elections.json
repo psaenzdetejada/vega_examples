@@ -4,7 +4,6 @@
   "width": 300,
   "height": 200,
   "autosize": "none",
-  "title": {"text": "Title Text"},
   "signals": [{"name": "innerRadius", "value": 100}],
   "data": [
     {
@@ -73,6 +72,5 @@
         }
       }
     }
-  ],
-
+  ]
 }
