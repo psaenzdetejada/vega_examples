@@ -4,25 +4,36 @@
   "width": 300,
   "height": 200,
   "autosize": "none",
-
-"title": {
-  "text": "Title Text"
-  },
-
-  "signals": [
-    {
-      "name": "innerRadius", "value": 100
-    }
-  ],
-
+  "title": {"text": "Title Text"},
+  "signals": [{"name": "innerRadius", "value": 100}],
   "data": [
     {
       "name": "table",
       "values": [
-        {"id": "PP", "field": 29},
-        {"id": "MM", "field": 12},
-        {"id": "PSOE", "field": 11},
-        {"id": "VOX", "field": 5}
+        {
+          "id": "PP",
+          "field": 29,
+          "startAngle": 0.027557894736842004,
+          "endAngle": -1.5708
+        },
+        {
+          "id": "MM",
+          "field": 12,
+          "startAngle": 0.6889473684210525,
+          "endAngle": 0.027557894736842004
+        },
+        {
+          "id": "PSOE",
+          "field": 11,
+          "startAngle": 1.2952210526315788,
+          "endAngle": 0.6889473684210525
+        },
+        {
+          "id": "VOX",
+          "field": 5,
+          "startAngle": 1.5708,
+          "endAngle": 1.2952210526315788
+        }
       ],
       "transform": [
         {
@@ -35,10 +46,6 @@
       ]
     }
   ],
-
-
-
-
   "scales": [
     {
       "name": "color",
@@ -47,13 +54,13 @@
       "range": {"scheme": "category20"}
     }
   ],
-
   "marks": [
     {
       "type": "arc",
       "from": {"data": "table"},
       "encode": {
         "enter": {
+          "tooltip": {"signal": "{title: 'Escaños por partido', 'Partido': datum.id, 'Escaños': datum.field}"},
           "fill": {"scale": "color", "field": "id"},
           "x": {"value": 150},
           "y": {"value": 200}
@@ -66,5 +73,6 @@
         }
       }
     }
-  ]
+  ],
+
 }
