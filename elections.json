@@ -12,29 +12,21 @@
         {
           "id": "PP",
           "field": 29,
-          "startAngle": 0.027557894736842004,
-          "endAngle": -1.5708,
           "color": "blue"
         },
         {
           "id": "MM",
           "field": 12,
-          "startAngle": 0.6889473684210525,
-          "endAngle": 0.027557894736842004,
           "color": "green"
         },
         {
           "id": "PSOE",
           "field": 11,
-          "startAngle": 1.2952210526315788,
-          "endAngle": 0.6889473684210525,
           "color": "red"
         },
         {
           "id": "VOX",
           "field": 5,
-          "startAngle": 1.5708,
-          "endAngle": 1.2952210526315788,
           "color": "black"
         }
       ],
