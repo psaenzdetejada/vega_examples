@@ -4,6 +4,8 @@
   "width": 400,
   "height": 400,
 
+  "view": {"stroke": null},
+
   "data": {    
     "values": [
       {"Category": "Accessories", "Sales": 163073.46},
@@ -53,7 +55,8 @@
         "axis": {
           "title": "Total Sales",
           "ticks": false,
-          "grid": true
+          "grid": true,
+          "domain": false
           }
         },
       "tooltip": [
