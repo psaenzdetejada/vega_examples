@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {    
+      "values": [
+        {"Category": "Accessories", "Sales": 163073.46},
+        {"Category": "Appliances", "Sales": 275439.18},
+        {"Category": "Art", "Sales": 160088.18},
+        {"Category": "Binders", "Sales": 99762.69},
+        {"Category": "Bookcases", "Sales": 363525.70},
+        {"Category": "Chairs", "Sales": 228980.97},
+        {"Category": "Copiers", "Sales": 365128.61},
+        {"Category": "Envelopes", "Sales": 40124.06},
+        {"Category": "Fasteners", "Sales": 20330.36},
+        {"Category": "Furnishings", "Sales": 81215.01},
+        {"Category": "Labels", "Sales": 15644.66},
+        {"Category": "Machines", "Sales": 223164.88},
+        {"Category": "Paper", "Sales": 43450.86},
+        {"Category": "Phones", "Sales": 361312.03},
+        {"Category": "Storage", "Sales": 339684.27},
+        {"Category": "Supplies", "Sales": 52782.75},
+        {"Category": "Tables", "Sales": 105381.38}
+      ]
+    },
+
+    "mark": "bar",
+    "encoding": {
+      "y": {"field": "Category", "type": "nominal"},
+      "x": {
+        "aggregate": "sum",
+        "field": "Sales",
+        "type": "quantitative",
+        "axis": {
+          "title": "Sum of Sales"
+        }
+      }
+    }
+}
