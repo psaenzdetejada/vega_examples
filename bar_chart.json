@@ -7,7 +7,7 @@
     "config": {
         "axis": {
             "grid": true,
-            "gridColor": "#ff0000"
+            "gridColor": "#dedede"
         }
     },
 
