@@ -1,88 +1,89 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  
-    "width": 400,
-    "height": 400,
-  
-    "data": {    
-      "values": [
-        {"Category": "Accessories", "Sales": 163073.46},
-        {"Category": "Appliances", "Sales": 275439.18},
-        {"Category": "Art", "Sales": 160088.18},
-        {"Category": "Binders", "Sales": 99762.69},
-        {"Category": "Bookcases", "Sales": 363525.70},
-        {"Category": "Chairs", "Sales": 228980.97},
-        {"Category": "Copiers", "Sales": 365128.61},
-        {"Category": "Envelopes", "Sales": 40124.06},
-        {"Category": "Fasteners", "Sales": 20330.36},
-        {"Category": "Furnishings", "Sales": 81215.01},
-        {"Category": "Labels", "Sales": 15644.66},
-        {"Category": "Machines", "Sales": 223164.88},
-        {"Category": "Paper", "Sales": 43450.86},
-        {"Category": "Phones", "Sales": 361312.03},
-        {"Category": "Storage", "Sales": 339684.27},
-        {"Category": "Supplies", "Sales": 52782.75},
-        {"Category": "Tables", "Sales": 105381.38}
-      ]
-    },
-    "title": {
-      "text": "Sales by product category",
-      "anchor": "start",
-      "color": "#4211BA",
-      "fontSize": 18,
-      "subtitle": "How much we are selling?",
-      "offset": 15
-    },
-  
-    "encoding": {
-        "y": {
-          "field": "Category", 
-          "type": "nominal", 
-          "title": null,
-          "sort": {"op": "sum", "field": "Sales", "order": "descending"},
-          "axis": {
-            "ticks": false,
-            "labelPadding": 5,
-            "labelFontSize": 12 
-          }
-        },
-        "x": {
-          "aggregate": "sum",
-          "field": "Sales",
-          "type": "quantitative",
-          "axis": {
-            "title": "Total Sales"
-            }
-          },
-        "tooltip": [
-          {"field": "Category"},
-          {"field": "Sales"}
-        ]
-    },
-  
-    "layer": [
-      {
-        "mark": {
-          "type": "bar",
-          "color": "#4211BA"    
-        }     
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "baseline": "middle",
-          "dx": 2,
-          "size": 10,
-          "color": "#4211BA"
-        },
-          "encoding": {
-            "text": {
-              "field": "Sales",
-              "format": "r"
-            }
-          }
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "width": 400,
+  "height": 400,
+
+  "data": {    
+    "values": [
+      {"Category": "Accessories", "Sales": 163073.46},
+      {"Category": "Appliances", "Sales": 275439.18},
+      {"Category": "Art", "Sales": 160088.18},
+      {"Category": "Binders", "Sales": 99762.69},
+      {"Category": "Bookcases", "Sales": 363525.70},
+      {"Category": "Chairs", "Sales": 228980.97},
+      {"Category": "Copiers", "Sales": 365128.61},
+      {"Category": "Envelopes", "Sales": 40124.06},
+      {"Category": "Fasteners", "Sales": 20330.36},
+      {"Category": "Furnishings", "Sales": 81215.01},
+      {"Category": "Labels", "Sales": 15644.66},
+      {"Category": "Machines", "Sales": 223164.88},
+      {"Category": "Paper", "Sales": 43450.86},
+      {"Category": "Phones", "Sales": 361312.03},
+      {"Category": "Storage", "Sales": 339684.27},
+      {"Category": "Supplies", "Sales": 52782.75},
+      {"Category": "Tables", "Sales": 105381.38}
     ]
+  },
+  "title": {
+    "text": "Sales by product category",
+    "anchor": "start",
+    "color": "#4211BA",
+    "fontSize": 18,
+    "subtitle": "How much we are selling?",
+    "offset": 15
+  },
+
+  "encoding": {
+      "y": {
+        "field": "Category", 
+        "type": "nominal", 
+        "title": null,
+        "sort": {"op": "sum", "field": "Sales", "order": "descending"},
+        "axis": {
+          "ticks": false,
+          "labelPadding": 5,
+          "labelFontSize": 12
+        }
+      },
+      "x": {
+        "aggregate": "sum",
+        "field": "Sales",
+        "type": "quantitative",
+        "axis": {
+          "title": "Total Sales",
+          "ticks": false,
+          "grid": true
+          }
+        },
+      "tooltip": [
+        {"field": "Category"},
+        {"field": "Sales", "format": ",.1f"}
+      ]
+  },
+
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "color": "#4211BA"    
+      }     
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 2,
+        "size": 10,
+        "color": "#4211BA"
+      },
+        "encoding": {
+          "text": {
+            "field": "Sales",
+            "format": ",.0f"
+          }
+        }
+    }
+  ]
 }
-  
