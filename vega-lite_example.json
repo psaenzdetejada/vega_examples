@@ -1,5 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 400,
+    "height": 400,
+  
     "data": {    
       "values": [
         {"Category": "Accessories", "Sales": 163073.46},
@@ -21,17 +25,64 @@
         {"Category": "Tables", "Sales": 105381.38}
       ]
     },
-
-    "mark": "bar",
+    "title": {
+      "text": "Sales by product category",
+      "anchor": "start",
+      "color": "#4211BA",
+      "fontSize": 18,
+      "subtitle": "How much we are selling?",
+      "offset": 15
+    },
+  
     "encoding": {
-      "y": {"field": "Category", "type": "nominal"},
-      "x": {
-        "aggregate": "sum",
-        "field": "Sales",
-        "type": "quantitative",
-        "axis": {
-          "title": "Sum of Sales"
-        }
+        "y": {
+          "field": "Category", 
+          "type": "nominal", 
+          "title": null,
+          "sort": {"op": "sum", "field": "Sales", "order": "descending"},
+          "axis": {
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 12 
+          }
+        },
+        "x": {
+          "aggregate": "sum",
+          "field": "Sales",
+          "type": "quantitative",
+          "axis": {
+            "title": "Total Sales"
+            }
+          },
+        "tooltip": [
+          {"field": "Category"},
+          {"field": "Sales"}
+        ]
+    },
+  
+    "layer": [
+      {
+        "mark": {
+          "type": "bar",
+          "color": "#4211BA"    
+        },      
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 2,
+          "size": 10,
+          "color": "#4211BA"
+        },
+          "encoding": {
+            "text": {
+              "field": "Sales",
+              "format": "r"
+            }
+          }
       }
-    }
-}
+    ]
+  }
+  
