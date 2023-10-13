@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "description": "A basic bar chart example, with value labels shown upon mouse hover.",
     "width": 400,
     "height": 200,
     "padding": 5,
@@ -86,7 +85,7 @@
             "y": {"scale": "yscale", "signal": "tooltip.amount", "offset": -2},
             "text": {"signal": "tooltip.amount"},
             "fillOpacity": [
-              {"test": "datum === tooltip", "value": 0},
+              {"test": "isNaN(tooltip.amount)", "value": 0},
               {"value": 1}
             ]
           }
