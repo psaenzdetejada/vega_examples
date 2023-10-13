@@ -3,7 +3,14 @@
     "width": 400,
     "height": 200,
     "padding": 5,
-  
+    
+    "config": {
+        "axis": {
+            "grid": true,
+            "gridColor": "#dedede"
+        }
+    },
+
     "data": [
       {
         "name": "table",
