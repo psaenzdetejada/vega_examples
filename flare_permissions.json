@@ -1,0 +1,174 @@
+[
+    {
+      "id": 1,
+      "name": "Capability outside scope of site role?"
+    },
+    {
+      "id": 2,
+      "name": "Yes",
+      "parent": 1
+    },
+    {
+      "id": 3,
+      "name": "Denied",
+      "parent": 2
+    },
+    {
+      "id": 4,
+      "name": "No",
+      "parent": 1,
+      "size": 3938
+    },
+    {
+      "id": 5,
+      "name": "Allowed",
+      "parent": 4,
+      "size": 3812
+    },
+    {
+      "id": 6,
+      "name": "Admin or Project Leader?",
+      "parent": 4,
+      "size": 6714
+    },
+    {
+      "id": 7,
+      "name": "Yes",
+      "parent": 6,
+      "size": 743
+    },
+    {
+      "id": 8,
+      "name": "Allowed",
+      "parent": 7
+    },
+    {
+      "id": 9,
+      "name": "No",
+      "parent": 6,
+      "size": 3534
+    },
+    {
+      "id": 10,
+      "name": "Content Owner?",
+      "parent": 9,
+      "size": 5731
+    },
+    {
+      "id": 11,
+      "name": "Yes",
+      "parent": 9,
+      "size": 7840
+    },
+    {
+      "id": 12,
+      "name": "Allowed",
+      "parent": 11,
+      "size": 5914
+    },
+    {
+      "id": 13,
+      "name": "No",
+      "parent": 9,
+      "size": 3416
+    },
+    {
+      "id": 14,
+      "name": "Denied as a user?",
+      "parent": 13
+    },
+    {
+      "id": 15,
+      "name": "Yes",
+      "parent": 14,
+      "size": 7074
+    },
+    {
+      "id": 16,
+      "name": "Denied",
+      "parent": 15
+    },
+    {
+      "id": 17,
+      "name": "No",
+      "parent": 14,
+      "size": 17010
+    },
+    {
+      "id": 18,
+      "name": "Allowed as a user?",
+      "parent": 17,
+      "size": 5842
+    },
+    {
+      "id": 19,
+      "name": "Yes",
+      "parent": 17
+    },
+    {
+      "id": 20,
+      "name": "Allowed",
+      "parent": 19,
+      "size": 1983
+    },
+    {
+      "id": 21,
+      "name": "No",
+      "parent": 17,
+      "size": 2047
+    },
+    {
+      "id": 22,
+      "name": "Denied as a group member?",
+      "parent": 17,
+      "size": 1375
+    },
+    {
+      "id": 23,
+      "name": "Yes",
+      "parent": 22,
+      "size": 8746
+    },
+    {
+      "id": 24,
+      "name": "Denied",
+      "parent": 23,
+      "size": 2202
+    },
+    {
+      "id": 25,
+      "name": "No",
+      "parent": 22,
+      "size": 1382
+    },
+    {
+      "id": 26,
+      "name": "Allowed as a group member?",
+      "parent": 25,
+      "size": 1629
+    },
+    {
+      "id": 27,
+      "name": "Yes",
+      "parent": 26,
+      "size": 1675
+    },
+    {
+      "id": 28,
+      "name": "Allowed",
+      "parent": 27,
+      "size": 2042
+    },
+    {
+      "id": 29,
+      "name": "No",
+      "parent": 26,
+      "size": 1041
+    },
+    {
+      "id": 30,
+      "name": "Denied",
+      "parent": 29,
+      "size": 5176
+    }
+  ]
