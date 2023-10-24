@@ -1,168 +1,197 @@
 [
     {
       "id": 1,
-      "name": "Capability outside scope of site role?"
+      "name": "Capability outside scope of site role?",
+      "colorid": "black"
     },
     {
       "id": 2,
       "name": "Yes",
-      "parent": 1
+      "parent": 1,
+      "colorid": "black"
     },
     {
       "id": 3,
       "name": "Denied",
-      "parent": 2
+      "parent": 2,
+      "colorid": "red"
     },
     {
       "id": 4,
       "name": "No",
       "parent": 1,
-      "size": 3938
+      "size": 3938,
+      "colorid": "black"
     },
     {
       "id": 5,
       "name": "Admin or Project Leader?",
       "parent": 4,
-      "size": 6714
+      "size": 6714,
+      "colorid": "black"
     },
     {
       "id": 6,
       "name": "Yes",
       "parent": 5,
-      "size": 743
+      "size": 743,
+      "colorid": "black"
     },
     {
       "id": 7,
       "name": "Allowed",
-      "parent": 6
+      "parent": 6,
+      "colorid": "blue"
     },
     {
       "id": 8,
       "name": "No",
       "parent": 5,
-      "size": 3534
+      "size": 3534,
+      "colorid": "black"
     },
     {
       "id": 9,
       "name": "Content Owner?",
       "parent": 8,
-      "size": 5731
+      "size": 5731,
+      "colorid": "black"
     },
     {
       "id": 10,
       "name": "Yes",
       "parent": 9,
-      "size": 7840
+      "size": 7840,
+      "colorid": "black"
     },
     {
       "id": 11,
       "name": "Allowed",
       "parent": 10,
-      "size": 5914
+      "size": 5914,
+      "colorid": "blue"
     },
     {
       "id": 12,
       "name": "No",
       "parent": 9,
-      "size": 3416
+      "size": 3416,
+      "colorid": "black"
     },
     {
       "id": 13,
       "name": "Denied as a user?",
-      "parent": 12
+      "parent": 12,
+      "colorid": "black"
     },
     {
       "id": 14,
       "name": "Yes",
       "parent": 13,
-      "size": 7074
+      "size": 7074,
+      "colorid": "black"
     },
     {
       "id": 15,
       "name": "Denied",
-      "parent": 14
+      "parent": 14,
+      "colorid": "red"
     },
     {
       "id": 16,
       "name": "No",
       "parent": 13,
-      "size": 17010
+      "size": 17010,
+      "colorid": "black"
     },
     {
       "id": 17,
       "name": "Allowed as a user?",
       "parent": 16,
-      "size": 5842
+      "size": 5842,
+      "colorid": "black"
     },
     {
       "id": 18,
       "name": "Yes",
-      "parent": 17
+      "parent": 17,
+      "colorid": "black"
     },
     {
       "id": 19,
       "name": "Allowed",
       "parent": 18,
-      "size": 1983
+      "size": 1983,
+      "colorid": "blue"
     },
     {
       "id": 20,
       "name": "No",
       "parent": 17,
-      "size": 2047
+      "size": 2047,
+      "colorid": "black"
     },
     {
       "id": 21,
       "name": "Denied as a group member?",
       "parent": 20,
-      "size": 1375
+      "size": 1375,
+      "colorid": "black"
     },
     {
       "id": 22,
       "name": "Yes",
       "parent": 21,
-      "size": 8746
+      "size": 8746,
+      "colorid": "black"
     },
     {
       "id": 23,
       "name": "Denied",
       "parent": 22,
-      "size": 2202
+      "size": 2202,
+      "colorid": "red"
     },
     {
       "id": 24,
       "name": "No",
       "parent": 21,
-      "size": 1382
+      "size": 1382,
+      "colorid": "black"
     },
     {
       "id": 25,
       "name": "Allowed as a group member?",
       "parent": 24,
-      "size": 1629
+      "size": 1629,
+      "colorid": "black"
     },
     {
       "id": 26,
       "name": "Yes",
       "parent": 25,
-      "size": 1675
+      "size": 1675,
+      "colorid": "black"
     },
     {
       "id": 27,
       "name": "Allowed",
       "parent": 26,
-      "size": 2042
+      "size": 2042,
+      "colorid": "blue"
     },
     {
       "id": 28,
       "name": "No",
       "parent": 25,
-      "size": 1041
+      "size": 1041,
+      "colorid": "black"
     },
     {
       "id": 29,
       "name": "Denied",
       "parent": 28,
-      "size": 5176
+      "size": 5176,
+      "colorid": "red"
     }
   ]
