@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Capability outside scope of site role?",
+      "name": "Capability|outside scope|of site role?",
       "colorid": "black"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "id": 5,
-      "name": "Admin or Project Leader?",
+      "name": "Admin or|Project Leader?",
       "parent": 4,
       "size": 6714,
       "colorid": "black"
@@ -52,7 +52,7 @@
     },
     {
       "id": 9,
-      "name": "Content Owner?",
+      "name": "Content|Owner?",
       "parent": 8,
       "size": 5731,
       "colorid": "black"
@@ -80,7 +80,7 @@
     },
     {
       "id": 13,
-      "name": "Denied as a user?",
+      "name": "Denied|as a user?",
       "parent": 12,
       "colorid": "black"
     },
@@ -106,7 +106,7 @@
     },
     {
       "id": 17,
-      "name": "Allowed as a user?",
+      "name": "Allowed|as a user?",
       "parent": 16,
       "size": 5842,
       "colorid": "black"
@@ -133,7 +133,7 @@
     },
     {
       "id": 21,
-      "name": "Denied as a group member?",
+      "name": "Denied|as a group|member?",
       "parent": 20,
       "size": 1375,
       "colorid": "black"
