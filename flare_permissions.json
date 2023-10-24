@@ -161,7 +161,7 @@
     },
     {
       "id": 25,
-      "name": "Allowed as a group member?",
+      "name": "Allowed|as a group|member?",
       "parent": 24,
       "size": 1629,
       "colorid": "black"
