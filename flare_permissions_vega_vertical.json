@@ -1,0 +1,103 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "An example of Cartesian layouts for a node-link diagram of hierarchical data.",
+    "width": 600,
+    "height": 600,
+    "padding": 5,
+  
+  
+    "data": [
+      {
+        "name": "tree",
+        "url": "https://raw.githubusercontent.com/psaenzdetejada/vega_examples/main/flare_permissions.json",
+        "transform": [
+          {
+            "type": "stratify",
+            "key": "id",
+            "parentKey": "parent"
+          },
+          {
+            "type": "tree",
+            "method": "tidy",
+            "size": [{"signal": "width"}, {"signal": "height"}]
+          }
+        ]
+      },
+      {
+        "name": "links",
+        "source": "tree",
+        "transform": [
+          { "type": "treelinks" },
+          {
+            "type": "linkpath",
+            "orient": "horizontal",
+            "shape": "diagonal"
+          }
+        ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "color",
+        "type": "linear",
+        "range": {"scheme": "magma"},
+        "domain": {"data": "tree", "field": "depth"},
+        "zero": true
+      }
+    ],
+  
+    "marks": [
+      {
+        "type": "path",
+        "from": {"data": "links"},
+        "encode": {
+          "update": {
+            "path": {"field": "path"},
+            "stroke": {"value": "#ccc"}
+          }
+        }
+      },
+      {
+        "type": "symbol",
+        "from": {"data": "tree"},
+        "encode": {
+          "enter": {
+            "size": {"value": 50},
+            "stroke": {"value": "#fff"},
+            "shape": {"value": "square"}
+          },
+          "update": {
+            "x": {"field": "x"},
+            "y": {"field": "y"},
+            "fill": {"field": "colorid"},
+            "shape": {"signal": "datum.children ? 'circle' : 'M-1,-1H5V1H-1Z'"},
+            "size": {"signal": "datum.children ? 50 : 800"}
+          }
+        }
+      },
+      {
+        "type": "text",
+        "from": {"data": "tree"},
+        "encode": {
+          "enter": {
+            "text": {"field": "name"},
+            "fontSize": {"value": 10},
+            "align": {"value": "center"},
+            "lineBreak": {"value": "|"}
+          },
+          "update": {
+            "x": {"field": "x"},
+            "y": {"field": "y"},
+            "dx": {"signal": "datum.children ? 0 : 10"},
+            "dy": {"signal": "datum.children ? 10 : 0"},
+            "align": {"signal": "datum.children ? 'center' : 'left'"},
+            "baseline": {"signal": "datum.children ? 'top' : 'middle'"},
+            "fontSize": {"signal": "datum.children ? 10 : 12"},
+            "fill": {"signal": "datum.children ? 'black' : 'white'"}
+          }
+        }
+      }
+    ]
+  }
+  

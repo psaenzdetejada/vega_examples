@@ -40,7 +40,7 @@
     },
     {
       "id": 7,
-      "name": "Allowed",
+      "name": "Permitido",
       "parent": 6,
       "colorid": "blue"
     },
@@ -60,14 +60,14 @@
     },
     {
       "id": 10,
-      "name": "Yes",
+      "name": "Si",
       "parent": 9,
       "size": 7840,
       "colorid": "black"
     },
     {
       "id": 11,
-      "name": "Allowed",
+      "name": "Permitido",
       "parent": 10,
       "size": 5914,
       "colorid": "blue"
@@ -87,14 +87,14 @@
     },
     {
       "id": 14,
-      "name": "Yes",
+      "name": "Si",
       "parent": 13,
       "size": 7074,
       "colorid": "black"
     },
     {
       "id": 15,
-      "name": "Denied",
+      "name": "Denegado",
       "parent": 14,
       "colorid": "red"
     },
@@ -114,13 +114,13 @@
     },
     {
       "id": 18,
-      "name": "Yes",
+      "name": "Si",
       "parent": 17,
       "colorid": "black"
     },
     {
       "id": 19,
-      "name": "Allowed",
+      "name": "Permitido",
       "parent": 18,
       "size": 1983,
       "colorid": "blue"
@@ -141,14 +141,14 @@
     },
     {
       "id": 22,
-      "name": "Yes",
+      "name": "Si",
       "parent": 21,
       "size": 8746,
       "colorid": "black"
     },
     {
       "id": 23,
-      "name": "Denied",
+      "name": "Denegado",
       "parent": 22,
       "size": 2202,
       "colorid": "red"
@@ -169,14 +169,14 @@
     },
     {
       "id": 26,
-      "name": "Yes",
+      "name": "Si",
       "parent": 25,
       "size": 1675,
       "colorid": "black"
     },
     {
       "id": 27,
-      "name": "Allowed",
+      "name": "Permitido",
       "parent": 26,
       "size": 2042,
       "colorid": "blue"
@@ -190,7 +190,7 @@
     },
     {
       "id": 29,
-      "name": "Denied",
+      "name": "Denegado",
       "parent": 28,
       "size": 5176,
       "colorid": "red"
