@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Capability|outside scope|of site role?",
+      "name": "Capability|outside|scope of|site role?",
       "colorid": "black"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "id": 5,
-      "name": "Admin or|Project Leader?",
+      "name": "Admin or|Project|Leader?",
       "parent": 4,
       "size": 6714,
       "colorid": "black"
