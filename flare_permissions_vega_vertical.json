@@ -30,7 +30,7 @@
           { "type": "treelinks" },
           {
             "type": "linkpath",
-            "orient": "horizontal",
+            "orient": "vertical",
             "shape": "diagonal"
           }
         ]
@@ -70,9 +70,10 @@
           "update": {
             "x": {"field": "x"},
             "y": {"field": "y"},
+            "dy": {"signal": "datum.children ? -30 : 0"},
             "fill": {"field": "colorid"},
             "shape": {"signal": "datum.children ? 'circle' : 'M-1,-1H5V1H-1Z'"},
-            "size": {"signal": "datum.children ? 50 : 800"}
+            "size": {"signal": "datum.children ? 50 : 500"}
           }
         }
       },
@@ -84,15 +85,14 @@
             "text": {"field": "name"},
             "fontSize": {"value": 10},
             "align": {"value": "center"},
-            "lineBreak": {"value": "|"}
           },
           "update": {
             "x": {"field": "x"},
             "y": {"field": "y"},
-            "dx": {"signal": "datum.children ? 0 : 10"},
-            "dy": {"signal": "datum.children ? 10 : 0"},
-            "align": {"signal": "datum.children ? 'center' : 'left'"},
-            "baseline": {"signal": "datum.children ? 'top' : 'middle'"},
+            "dx": {"signal": "datum.children ? 5 : 0"},
+            "dy": {"signal": "datum.children ? 5 : 0"},
+            "align": {"signal": "datum.children ? 'left' : 'left'"},
+            "baseline": {"signal": "datum.children ? 'bottom' : 'middle'"},
             "fontSize": {"signal": "datum.children ? 10 : 12"},
             "fill": {"signal": "datum.children ? 'black' : 'white'"}
           }
