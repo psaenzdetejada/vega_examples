@@ -1,18 +1,19 @@
 [
     {
       "id": 1,
-      "name": "Capability|outside|scope of|site role?",
-      "colorid": "black"
+      "name": "Está la|capacidad|fuera del|rol del usuario?",
+      "colorid": "black",
+      "tip": "Is the capability "
     },
     {
       "id": 2,
-      "name": "Yes",
+      "name": "Si",
       "parent": 1,
       "colorid": "black"
     },
     {
       "id": 3,
-      "name": "Denied",
+      "name": "Denegado",
       "parent": 2,
       "colorid": "red"
     },
@@ -25,14 +26,14 @@
     },
     {
       "id": 5,
-      "name": "Admin or|Project|Leader?",
+      "name": "Es Admin|o lider|del Proyecto?",
       "parent": 4,
       "size": 6714,
       "colorid": "black"
     },
     {
       "id": 6,
-      "name": "Yes",
+      "name": "Si",
       "parent": 5,
       "size": 743,
       "colorid": "black"
