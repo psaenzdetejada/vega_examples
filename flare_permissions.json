@@ -10,7 +10,7 @@
       "name": "Si",
       "parent": 1,
       "colorid": "black",
-      "tip": "Si, es una capacidad fuera de las permitidas por el tipo de licencia (ej: Editar un Workbook para un usuario Viewer)."
+      "tip": "Si, es una capacidad fuera de las permitidas por el tipo de licencia \n (ej: Editar un Workbook para un usuario Viewer)."
     },
     {
       "id": 3,
