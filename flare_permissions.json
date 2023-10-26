@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Está la|capacidad|fuera del|rol del usuario?",
+      "name": "¿Está la capacidad fuera del rol del usuario?",
       "colorid": "black",
       "tip": "Is the capability "
     },
@@ -26,7 +26,7 @@
     },
     {
       "id": 5,
-      "name": "Es Admin|o lider|del Proyecto?",
+      "name": "¿Es Admin o líder del Proyecto?",
       "parent": 4,
       "size": 6714,
       "colorid": "black"
@@ -53,7 +53,7 @@
     },
     {
       "id": 9,
-      "name": "Content|Owner?",
+      "name": "¿Es propietario del contenido?",
       "parent": 8,
       "size": 5731,
       "colorid": "black"
@@ -81,7 +81,7 @@
     },
     {
       "id": 13,
-      "name": "Denied|as a user?",
+      "name": "¿Se ha denegado acceso al usuario?",
       "parent": 12,
       "colorid": "black"
     },
@@ -107,7 +107,7 @@
     },
     {
       "id": 17,
-      "name": "Allowed|as a user?",
+      "name": "¿Se ha autorizado acceso al usuario?",
       "parent": 16,
       "size": 5842,
       "colorid": "black"
@@ -134,7 +134,7 @@
     },
     {
       "id": 21,
-      "name": "Denied|as a group|member?",
+      "name": "¿Se ha denegado acceso a un grupo al que el usuario pertenece?",
       "parent": 20,
       "size": 1375,
       "colorid": "black"
@@ -162,7 +162,7 @@
     },
     {
       "id": 25,
-      "name": "Allowed|as a group|member?",
+      "name": "¿Se ha autorizado acceso a un grupo al que el usuario pertenece?",
       "parent": 24,
       "size": 1629,
       "colorid": "black"
