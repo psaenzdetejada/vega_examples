@@ -16,41 +16,47 @@
       "id": 3,
       "name": "Denegado",
       "parent": 2,
-      "colorid": "red"
+      "colorid": "red",
+      "tip": "El permiso será denegado y el usuario nunca tendrá dicha capacidad."
     },
     {
       "id": 4,
       "name": "No",
       "parent": 1,
       "size": 3938,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "La capacidad no está fuera de los límites de la licencia del usuario, por tanto se evaluará la siguiente regla."
     },
     {
       "id": 5,
       "name": "¿Es Admin o líder del Proyecto?",
       "parent": 4,
       "size": 6714,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "¿Es el usuario un administrador o líder del Proyecto sobre el que se está creando el permiso?"
     },
     {
       "id": 6,
       "name": "Si",
       "parent": 5,
       "size": 743,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si es administrador o líder del proyecto sobre el que se está generando el permiso..."
     },
     {
       "id": 7,
       "name": "Permitido",
       "parent": 6,
-      "colorid": "blue"
+      "colorid": "blue",
+      "tip": "El usuario tendrá siempre permiso para todas las capacidades permitidas por su tipo de licencia."
     },
     {
       "id": 8,
       "name": "No",
       "parent": 5,
       "size": 3534,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si el usuario no es administrador o líder del proyecto se evalua la siguiente regla."
     },
     {
       "id": 9,
