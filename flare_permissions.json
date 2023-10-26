@@ -56,150 +56,171 @@
       "parent": 5,
       "size": 3534,
       "colorid": "black",
-      "tip": "Si el usuario no es administrador o líder del proyecto se evalua la siguiente regla."
+      "tip": "Si el usuario no es administrador o líder del proyecto se continuarán evaluando condiciones."
     },
     {
       "id": 9,
       "name": "¿Es propietario del contenido?",
       "parent": 8,
       "size": 5731,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "¿Es el usuario el propietario del contenido sobre el que se está estableciendo el permiso?"
     },
     {
       "id": 10,
       "name": "Si",
       "parent": 9,
       "size": 7840,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si, es el propietario del contenido."
     },
     {
       "id": 11,
       "name": "Permitido",
       "parent": 10,
       "size": 5914,
-      "colorid": "blue"
+      "colorid": "blue",
+      "tip": "El usuario tendrá siempre permiso para todas las capacidades permitidas por su tipo de licencia."
     },
     {
       "id": 12,
       "name": "No",
       "parent": 9,
       "size": 3416,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si el usuario no es propietario del contenido, se continuarán evaluando condiciones."
     },
     {
       "id": 13,
       "name": "¿Se ha denegado acceso al usuario?",
       "parent": 12,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "¿Se le ha denegado la capacidad a través de una regla específica para dicho usuario?"
     },
     {
       "id": 14,
       "name": "Si",
       "parent": 13,
       "size": 7074,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si, hay una regla específica que niega la capacidad a nivel de usuario."
     },
     {
       "id": 15,
       "name": "Denegado",
       "parent": 14,
-      "colorid": "red"
+      "colorid": "red",
+      "tip": "El usuario no tendrá permiso para dicha capacidad."
     },
     {
       "id": 16,
       "name": "No",
       "parent": 13,
       "size": 17010,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "No existe una regla específica que niegue la capacidad a nivel de usuario."
     },
     {
       "id": 17,
       "name": "¿Se ha autorizado acceso al usuario?",
       "parent": 16,
       "size": 5842,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "¿Se le ha habilitado la capacidad a través de una regla específica para dicho usuario?"
     },
     {
       "id": 18,
       "name": "Si",
       "parent": 17,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si, hay una regla específica que habilita la capacidad a nivel de usuario."
     },
     {
       "id": 19,
       "name": "Permitido",
       "parent": 18,
       "size": 1983,
-      "colorid": "blue"
+      "colorid": "blue",
+      "tip": "El usuario tendrá permiso para dicha capacidad."
     },
     {
       "id": 20,
       "name": "No",
       "parent": 17,
       "size": 2047,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "No existe una regla específica de usuario que habilite la capacidad."
     },
     {
       "id": 21,
       "name": "¿Se ha denegado acceso a un grupo al que el usuario pertenece?",
       "parent": 20,
       "size": 1375,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "¿Existe una regla para un grupo de usuarios al que el usuario pertenece y que niegue la capacidad?"
     },
     {
       "id": 22,
       "name": "Si",
       "parent": 21,
       "size": 8746,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si, hay una regla para un grupo al que el usuario pertenece que niega la capacidad."
     },
     {
       "id": 23,
       "name": "Denegado",
       "parent": 22,
       "size": 2202,
-      "colorid": "red"
+      "colorid": "red",
+      "tip": "El usuario no tendrá permiso para dicha capacidad."
     },
     {
       "id": 24,
       "name": "No",
       "parent": 21,
       "size": 1382,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "No hay una regla para ningún grupo al que el usuario pertenece que niegue la capacidad."
     },
     {
       "id": 25,
       "name": "¿Se ha autorizado acceso a un grupo al que el usuario pertenece?",
       "parent": 24,
       "size": 1629,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "¿Existe una regla para un grupo de usarios al que el usuario pertenece que habilita la capacidad?"
     },
     {
       "id": 26,
       "name": "Si",
       "parent": 25,
       "size": 1675,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si, hay una regla para un grupo al que el usuario pertenece que otorga la capacidad."
     },
     {
       "id": 27,
       "name": "Permitido",
       "parent": 26,
       "size": 2042,
-      "colorid": "blue"
+      "colorid": "blue",
+      "tip": "El usuario tendrá permiso para dicha capacidad."
     },
     {
       "id": 28,
       "name": "No",
       "parent": 25,
       "size": 1041,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "No hay una regla para ningún grupo al que el usuario pertenece que habilite la capacidad."
     },
     {
       "id": 29,
       "name": "Denegado",
       "parent": 28,
       "size": 5176,
-      "colorid": "red"
+      "colorid": "red",
+      "tip": "El usuario no tendrá permiso para dicha capacidad."
     }
   ]
