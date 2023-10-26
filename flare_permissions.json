@@ -3,13 +3,14 @@
       "id": 1,
       "name": "¿Está la capacidad fuera del rol del usuario?",
       "colorid": "black",
-      "tip": "Is the capability "
+      "tip": "¿La capacidad evaluada está fuera de las capacidades que el rol de la licencia del usuario permiten?"
     },
     {
       "id": 2,
       "name": "Si",
       "parent": 1,
-      "colorid": "black"
+      "colorid": "black",
+      "tip": "Si, es una capacidad fuera de las permitidas por el tipo de licencia (ej: Editar un Workbook para un usuario Viewer)."
     },
     {
       "id": 3,
