@@ -4,7 +4,15 @@
   "width": 400,
   "height": 500,
   "padding": 5,
-
+  "title": {
+    "text": "Diagrama de orden de evaluación de permisos en Tableau Cloud y Tableau Server.", 
+    "anchor": "start",
+    "offset":{"value": 30},
+    "fontSize": 14,
+    "subtitle": "Pasa el ratón sobre cada elemento del diagrama para ver una explicación más detallada.",
+    "subtitleFontStyle": "Italic",
+    "subtitleFontSize": 10
+    },
 
   "data": [
     {
@@ -63,17 +71,21 @@
       "from": {"data": "tree"},
       "encode": {
         "enter": {
-          "size": {"value": 50},
+          "size": {"value": 800},
           "stroke": {"value": "#fff"},
-          "shape": {"value": "square"},
-          "tooltip": {"field": "tip"}
+          "shape": {"value": "circle"},
+          "opacity": {"value": 1},
+          "fillOpacity": {"value": 1},
+          "strokeWidth": {"value": 3}
+
         },
         "update": {
           "x": {"field": "x"},
           "y": {"field": "y"},
           "fill": {"field": "colorid"},
           "shape": {"signal": "datum.children ? 'circle' : 'M-3,-1H3V1H-3Z'"},
-          "size": {"signal": "datum.children ? 50 : 500"}
+          "size": {"signal": "datum.children ? 60 : 500"},
+          "tooltip": {"field": "tip"}
         }
       }
     },
