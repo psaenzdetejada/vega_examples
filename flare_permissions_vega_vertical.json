@@ -85,7 +85,7 @@
         "enter": {
           "text": {"field": "name"},
           "fontSize": {"value": 10},
-          "align": {"value": "center"},
+          "align": {"value": "center"}
         },
         "update": {
           "x": {"field": "x"},
